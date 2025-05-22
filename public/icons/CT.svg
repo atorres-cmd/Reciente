@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="200" viewBox="0 0 400 200">
+  <!-- Fondo transparente -->
+  <rect width="400" height="200" fill="none"/>
+  
+  <!-- Plataforma principal - color verde opaco -->
+  <rect 
+    x="50" 
+    y="80" 
+    width="300" 
+    height="60" 
+    fill="#4CAF50" 
+    stroke="#333333" 
+    strokeWidth="2"
+  />
+  
+  <!-- Detalles del carro -->
+  <rect x="70" y="90" width="260" height="40" fill="#3E8E41" stroke="#333333" strokeWidth="1" />
+  
+  <!-- Ruedas o soportes -->
+  <circle cx="80" cy="150" r="10" fill="#555555" stroke="#333333" strokeWidth="1" />
+  <circle cx="320" cy="150" r="10" fill="#555555" stroke="#333333" strokeWidth="1" />
+  
+  <!-- Cabina de control -->
+  <rect x="170" y="60" width="60" height="30" fill="#888888" stroke="#333333" strokeWidth="1" />
+  <rect x="180" y="65" width="40" height="20" fill="#AADDFF" stroke="#333333" strokeWidth="0.5" />
+  
+  <!-- Texto identificativo -->
+  <text x="200" y="115" text-anchor="middle" fill="#FFFFFF" font-weight="bold" font-size="16">CT</text>
+</svg>

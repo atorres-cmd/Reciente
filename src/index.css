@@ -1,0 +1,28 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Roboto", ui-sans-serif, system-ui, sans-serif;
+  }
+  body {
+    @apply bg-operator-gray-bg text-gray-800;
+  }
+}
+
+@layer components {
+  .bg-operator-sidebar {
+    @apply bg-gray-800;
+  }
+  
+  /* Asegurarse de que todos los textos en el panel lateral sean blancos */
+  .bg-operator-sidebar button span {
+    color: white !important;
+  }
+  
+  .bg-operator-sidebar .text-\[10px\] {
+    color: white !important;
+  }
+}

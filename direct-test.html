@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba Directa AppSilo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #0066cc;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+        .card {
+            background: #f9f9f9;
+            border-left: 4px solid #0066cc;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+        .success {
+            background: #e7f7e7;
+            border-left-color: #28a745;
+        }
+        .warning {
+            background: #fff9e6;
+            border-left-color: #ffc107;
+        }
+        button {
+            background: #0066cc;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Prueba Directa AppSilo</h1>
+        
+        <div class="card success">
+            <h2>Prueba de Visualización</h2>
+            <p>Si puedes ver esta página, tu navegador está funcionando correctamente para mostrar contenido HTML estático.</p>
+        </div>
+        
+        <div class="card">
+            <h2>Información del Sistema</h2>
+            <ul>
+                <li><strong>Fecha y Hora:</strong> <span id="datetime"></span></li>
+                <li><strong>URL:</strong> <span id="url"></span></li>
+                <li><strong>Navegador:</strong> <span id="browser"></span></li>
+            </ul>
+        </div>
+        
+        <div class="card warning">
+            <h2>Prueba de JavaScript</h2>
+            <p>Haz clic en el botón para verificar que JavaScript está funcionando correctamente:</p>
+            <button onclick="testFunction()">Probar JavaScript</button>
+            <p id="jsResult"></p>
+        </div>
+    </div>
+
+    <script>
+        // Actualizar información del sistema
+        document.getElementById('datetime').textContent = new Date().toLocaleString();
+        document.getElementById('url').textContent = window.location.href;
+        document.getElementById('browser').textContent = navigator.userAgent;
+        
+        // Función de prueba
+        function testFunction() {
+            document.getElementById('jsResult').textContent = 'JavaScript está funcionando correctamente! ' + new Date().toLocaleTimeString();
+        }
+    </script>
+</body>
+</html>

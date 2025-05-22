@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Prueba AppSilo</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+        .status-card {
+            background-color: #e9f7ef;
+            border-left: 4px solid #2ecc71;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        .button:hover {
+            background-color: #2980b9;
+        }
+        .info {
+            margin-top: 20px;
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Página de Prueba AppSilo</h1>
+        
+        <div class="status-card">
+            <h2>Estado del Sistema</h2>
+            <p>Esta es una página HTML estática para verificar que el navegador puede mostrar contenido correctamente.</p>
+        </div>
+        
+        <button class="button" onclick="testFunction()">Probar Funcionalidad</button>
+        
+        <div class="info">
+            <h3>Información del Sistema</h3>
+            <p><strong>Fecha y Hora:</strong> <span id="datetime"></span></p>
+            <p><strong>URL:</strong> <span id="url"></span></p>
+            <p><strong>Navegador:</strong> <span id="browser"></span></p>
+        </div>
+    </div>
+
+    <script>
+        // Actualizar la información del sistema
+        document.getElementById('datetime').textContent = new Date().toLocaleString();
+        document.getElementById('url').textContent = window.location.href;
+        document.getElementById('browser').textContent = navigator.userAgent;
+        
+        // Función de prueba
+        function testFunction() {
+            alert('La página está funcionando correctamente!');
+        }
+    </script>
+</body>
+</html>

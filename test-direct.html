@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba AppSilo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+        .card-title {
+            margin-top: 0;
+            color: #0066cc;
+        }
+        button {
+            background-color: #0066cc;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0052a3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Prueba AppSilo</h1>
+        
+        <div class="card">
+            <h2 class="card-title">Página de prueba</h2>
+            <p>Esta es una página HTML estática simple para verificar que el navegador puede mostrar contenido HTML correctamente.</p>
+            <p>Hora actual: <span id="current-time"></span></p>
+            <button onclick="updateTime()">Actualizar hora</button>
+        </div>
+        
+        <div class="card">
+            <h2 class="card-title">Información del sistema</h2>
+            <p>URL: <span id="current-url"></span></p>
+            <p>Navegador: <span id="browser-info"></span></p>
+        </div>
+    </div>
+
+    <script>
+        // Función para actualizar la hora
+        function updateTime() {
+            document.getElementById('current-time').textContent = new Date().toLocaleString();
+        }
+        
+        // Inicializar la página
+        window.onload = function() {
+            // Mostrar la hora actual
+            updateTime();
+            
+            // Mostrar información del sistema
+            document.getElementById('current-url').textContent = window.location.href;
+            document.getElementById('browser-info').textContent = navigator.userAgent;
+        };
+    </script>
+</body>
+</html>
