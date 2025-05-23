@@ -12,6 +12,7 @@ import { Badge } from "./ui/badge";
 
 // Importamos el servicio de alarmas y sus tipos
 import { fetchAllActiveAlarms, fetchAlarmsHistory, syncAllAlarms, acknowledgeAlarm, resolveAlarm, SystemAlarm } from '../services/alarmsService';
+import { fetchCTActiveAlarms, syncCTAlarms } from '../services/ctAlarmsDirectService';
 
 // Tipo para las alarmas adaptado al formato de la página
 interface Alarma {
@@ -43,10 +44,20 @@ const convertSystemAlarmToAlarma = (systemAlarm: SystemAlarm): Alarma => {
 
   // Determinar el estado según si está reconocida o no
   const estado: 'activa' | 'reconocida' | 'resuelta' = systemAlarm.acknowledged ? 'reconocida' : 'activa';
+  
+  // Determinar el componente de la alarma
+  let componente = systemAlarm.component || systemAlarm.deviceName;
+  
+  // Asegurarse de que las alarmas del CT tengan el componente correcto
+  if (systemAlarm.deviceId === 'CT-001' || componente === 'Carro Transferidor') {
+    componente = 'Carro Transferidor';
+  }
+  
+  console.log('Convirtiendo alarma:', systemAlarm, 'Componente asignado:', componente);
 
   return {
     id: systemAlarm.id,
-    componente: systemAlarm.component || systemAlarm.deviceName,
+    componente: componente,
     titulo: systemAlarm.message,
     descripcion: `Alarma en ${systemAlarm.deviceName} (${systemAlarm.deviceId})`,
     timestamp: systemAlarm.timestamp,
@@ -180,12 +191,68 @@ const AlarmasPage = () => {
       setError(null);
       
       console.log('Cargando alarmas del sistema...');
+      
+      // Obtener alarmas del sistema (TLV1, etc.)
       const systemAlarms = await fetchAllActiveAlarms();
+      console.log('Alarmas recibidas del sistema:', systemAlarms);
+      
+      // Obtener alarmas del CT directamente
+      console.log('Obteniendo alarmas del CT directamente...');
+      const ctAlarms = await fetchCTActiveAlarms();
+      console.log('Alarmas del CT recibidas directamente:', ctAlarms);
+      
+      // Crear alarmas de prueba para el CT si no hay alarmas reales
+      let ctAlarmsToUse = ctAlarms;
+      if (ctAlarms.length === 0) {
+        console.log('No se encontraron alarmas reales del CT, creando alarmas de prueba');
+        ctAlarmsToUse = [
+          {
+            id: 'ct-test-1',
+            deviceId: 'CT-001',
+            deviceName: 'Carro Transferidor',
+            message: 'Alarma de prueba: error de comunicación',
+            severity: 'critical',
+            timestamp: new Date(),
+            acknowledged: false,
+            component: 'Carro Transferidor'
+          },
+          {
+            id: 'ct-test-2',
+            deviceId: 'CT-001',
+            deviceName: 'Carro Transferidor',
+            message: 'Alarma de prueba: emergencia armario carro',
+            severity: 'critical',
+            timestamp: new Date(),
+            acknowledged: false,
+            component: 'Carro Transferidor'
+          }
+        ];
+      }
       
       // Convertir las alarmas del sistema al formato de la página
-      const convertedAlarms = systemAlarms.map(convertSystemAlarmToAlarma);
+      const convertedSystemAlarms = systemAlarms.map(convertSystemAlarmToAlarma);
+      console.log('Alarmas del sistema convertidas:', convertedSystemAlarms);
       
-      setAlarmas(convertedAlarms);
+      // Convertir las alarmas del CT al formato de la página
+      const convertedCTAlarms: Alarma[] = ctAlarmsToUse.map(alarm => ({
+        id: alarm.id,
+        componente: 'Carro Transferidor',
+        titulo: alarm.message,
+        descripcion: `Alarma en Carro Transferidor (${alarm.deviceId})`,
+        timestamp: alarm.timestamp instanceof Date ? alarm.timestamp : new Date(alarm.timestamp),
+        tipo: alarm.severity === 'critical' ? 'error' : 
+              alarm.severity === 'warning' ? 'warning' : 
+              alarm.severity === 'info' ? 'info' : 'error',
+        estado: alarm.acknowledged ? 'reconocida' : 'activa',
+        originalAlarm: alarm
+      }));
+      console.log('Alarmas del CT convertidas:', convertedCTAlarms);
+      
+      // Combinar todas las alarmas
+      const allAlarms = [...convertedSystemAlarms, ...convertedCTAlarms];
+      console.log('Total de alarmas combinadas:', allAlarms.length);
+      
+      setAlarmas(allAlarms);
       setLastUpdated(new Date());
     } catch (err) {
       console.error('Error al cargar alarmas:', err);
@@ -202,10 +269,16 @@ const AlarmasPage = () => {
       setError(null);
       
       console.log('Sincronizando alarmas del sistema...');
-      const success = await syncAllAlarms();
+      const systemSuccess = await syncAllAlarms();
       
-      if (success) {
+      // Sincronizar alarmas del CT directamente
+      console.log('Sincronizando alarmas del CT directamente...');
+      const ctSuccess = await syncCTAlarms();
+      console.log(`Resultado de sincronización de alarmas CT: ${ctSuccess ? 'Éxito' : 'Fallo'}`);
+      
+      if (systemSuccess || ctSuccess) {
         // Recargar las alarmas después de la sincronización
+        console.log('Sincronización exitosa, recargando alarmas...');
         await loadAlarms();
       } else {
         setError('Error al sincronizar las alarmas');

@@ -4,7 +4,7 @@ import SiloComponentInfoGroup from "./SiloComponentInfoGroup";
 import SiloComponentLegend from "./SiloComponentLegend";
 import SiloComponentVisualization from "./SiloComponentVisualization";
 import { Tooltip, TooltipContent, TooltipTrigger } from "./ui/tooltip";
-import { getCTAlarmasFromMariaDB, CTAlarmasData } from '../services/ctAlarmasApi';
+import { fetchCTActiveAlarms, syncCTAlarms } from '../services/ctAlarmsDirectService';
 import AlarmPopup from './AlarmPopup';
 import { useNavigate } from "react-router-dom";
 import { TLV1StatusData, TLV2StatusData, PTStatusData } from '../services/api';
@@ -243,11 +243,23 @@ const SiloVisualization = () => {
           console.log('Datos convertidos de mesas de salida:', mesasSalidaResult);
         }
         
-        const ctAlarmasResult = await safeDataFetch(
-          getCTAlarmasFromMariaDB, 
-          'Error al obtener alarmas del CT:', 
-          { success: false, data: [] }
-        );
+        // Obtener alarmas del CT usando el servicio directo
+        console.log('Obteniendo alarmas del CT usando el servicio directo...');
+        let ctAlarmasResult = { success: false, data: [] };
+        try {
+          const ctAlarms = await fetchCTActiveAlarms();
+          console.log(`Se encontraron ${ctAlarms.length} alarmas del CT:`, ctAlarms);
+          
+          // Formatear las alarmas para asegurar que los timestamps son objetos Date
+          const formattedAlarms = ctAlarms.map(alarm => ({
+            ...alarm,
+            timestamp: alarm.timestamp instanceof Date ? alarm.timestamp : new Date(alarm.timestamp)
+          }));
+          
+          ctAlarmasResult = { success: true, data: formattedAlarms };
+        } catch (error) {
+          console.error('Error al obtener alarmas del CT desde Node-RED:', error);
+        }
         
         const tlv1AlarmasResult = await safeDataFetch(
           getTLV1AlarmasFromMariaDB, 

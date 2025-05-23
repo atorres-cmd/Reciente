@@ -30,7 +30,8 @@ const API_URL = nodeRedApiBaseUrl;
 const MARIADB_API_URL = nodeRedApiBaseUrl;
 
 // URL base para las alarmas del Carro Transferidor (CT)
-const CT_ALARMS_URL = `${nodeRedApiBaseUrl}/ct/alarmas`;
+// Corrigiendo la ruta para que coincida con la configuración de Node-RED (sin /api)
+const CT_ALARMS_URL = `http://${currentHost}:1880/ct/alarmas`;
 console.log('URL para alarmas CT:', CT_ALARMS_URL);
 
 // Definir rutas para el Puente de Transbordo (PT)

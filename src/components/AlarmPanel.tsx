@@ -3,6 +3,7 @@ import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
 import { Bell, BellRing, CheckCircle2, RefreshCw, Loader2, ExternalLink } from "lucide-react";
 import { fetchAllActiveAlarms, syncAllAlarms, SystemAlarm } from "../services/alarmsService";
+import { fetchCTActiveAlarms, syncCTAlarms } from "../services/ctAlarmsDirectService";
 import { useNavigate } from "react-router-dom";
 
 // Utilizamos el tipo SystemAlarm del servicio de alarmas
@@ -24,14 +25,31 @@ const AlarmPanel = () => {
       setError(null);
       
       console.log('Cargando todas las alarmas del sistema...');
-      const systemAlarms = await fetchAllActiveAlarms();
-      console.log(`Se encontraron ${systemAlarms.length} alarmas activas`);
+      
+      // Obtener alarmas del CT directamente usando el nuevo servicio
+      console.log('Obteniendo alarmas del CT usando el servicio directo...');
+      const ctAlarms = await fetchCTActiveAlarms();
+      console.log(`Se encontraron ${ctAlarms.length} alarmas del CT:`, ctAlarms);
+      
+      // Obtener otras alarmas del sistema (TLV1, etc.)
+      console.log('Obteniendo otras alarmas del sistema...');
+      const otherAlarms = await fetchAllActiveAlarms();
+      console.log(`Se encontraron ${otherAlarms.length} alarmas de otros componentes`);
+      
+      // Filtrar las alarmas del CT del servicio general para evitar duplicados
+      const filteredOtherAlarms = otherAlarms.filter(alarm => alarm.deviceId !== 'CT-001');
+      
+      // Combinar todas las alarmas
+      const allAlarms = [...ctAlarms, ...filteredOtherAlarms];
+      console.log(`Total de alarmas combinadas: ${allAlarms.length}`);
       
       // Asegurarse de que los timestamps son objetos Date
-      const formattedAlarms = systemAlarms.map(alarm => ({
+      const formattedAlarms = allAlarms.map(alarm => ({
         ...alarm,
         timestamp: alarm.timestamp instanceof Date ? alarm.timestamp : new Date(alarm.timestamp)
       }));
+      
+      console.log('Alarmas formateadas:', formattedAlarms);
       
       setAlarms(formattedAlarms);
       setLastUpdated(new Date());
@@ -50,9 +68,16 @@ const AlarmPanel = () => {
       setError(null); // Limpiar errores anteriores
       
       console.log('Iniciando sincronización manual de todas las alarmas...');
-      const success = await syncAllAlarms();
       
-      if (success) {
+      // Sincronizar alarmas del CT usando el servicio directo
+      console.log('Sincronizando alarmas del CT directamente...');
+      const ctSuccess = await syncCTAlarms();
+      
+      // Sincronizar otras alarmas del sistema
+      console.log('Sincronizando otras alarmas del sistema...');
+      const otherSuccess = await syncAllAlarms();
+      
+      if (ctSuccess || otherSuccess) {
         console.log('Sincronización exitosa, recargando alarmas...');
         // Esperar un momento para que la base de datos se actualice completamente
         setTimeout(async () => {
