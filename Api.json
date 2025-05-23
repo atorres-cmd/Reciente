@@ -1,0 +1,1574 @@
+[
+    {
+        "id": "4115b5639f61ab92",
+        "type": "tab",
+        "label": "Api_Rest",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "be87fb75b63b586a",
+        "type": "group",
+        "z": "4115b5639f61ab92",
+        "name": "API REST_estado de carro transferidor",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "aa8d65cd5f4e8bf6",
+            "80c00fca50cc5367",
+            "0c9ba0b8310b6cb7",
+            "7f9392d67ba43541",
+            "6ccc02cea757e355",
+            "2712b1b50b413c8d",
+            "04ec475b81971b1e",
+            "ec2d5a4bdf615a6c",
+            "95c6765780010732",
+            "455a554b2594aef2",
+            "fd328912cf7917dc"
+        ],
+        "x": 54,
+        "y": 79,
+        "w": 1132,
+        "h": 182
+    },
+    {
+        "id": "99f0b6ac6d468d98",
+        "type": "group",
+        "z": "4115b5639f61ab92",
+        "name": "API_REST_estado de puente de transbordo",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "6669448dabec1366",
+            "cbe8f55c4b3172c3",
+            "c136dffd882d0226",
+            "48286a21f4a44782",
+            "7475461341721953",
+            "96dad7ae31c2fe69",
+            "51dea51ad4f40e30",
+            "0a3c176bd7dae5da",
+            "b5885575bfa3a961",
+            "f398e4b2972df342",
+            "4550508b7b38874e"
+        ],
+        "x": 54,
+        "y": 279,
+        "w": 1142,
+        "h": 182
+    },
+    {
+        "id": "b956f497983cc83d",
+        "type": "group",
+        "z": "4115b5639f61ab92",
+        "name": "API_REST_estado de TLV1",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "f7526627cc478076",
+            "dbc9ed1919d26a1d",
+            "63cd81b6a4c38d19",
+            "271676d0800ddb9c",
+            "ef42d605f8377d9e",
+            "482952884efa6e8d",
+            "64fdd533eb2568bd",
+            "391b9a4d2fb201d0",
+            "d041b3ea9bba3a37",
+            "70b88c2fda9f1ccb",
+            "8834e62eabe6468d"
+        ],
+        "x": 54,
+        "y": 479,
+        "w": 1142,
+        "h": 182
+    },
+    {
+        "id": "613566b4015e61d2",
+        "type": "group",
+        "z": "4115b5639f61ab92",
+        "name": "API_REST_estado de TLV2",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "f2cd6dfcb7a3328b",
+            "49b11ea7fe797ce5",
+            "1724fb0c65f1f11b",
+            "4adf2f5cb7e792bd",
+            "846a41ee05038af5",
+            "50d3bc8d3cf5f720",
+            "d37514cc384f948a",
+            "85d4f7f07b6231f5",
+            "390ce33ceb536303",
+            "50df4bdc91373a44",
+            "a5088bb19968dd40"
+        ],
+        "x": 54,
+        "y": 679,
+        "w": 1142,
+        "h": 182
+    },
+    {
+        "id": "f57f9633bbaf243d",
+        "type": "group",
+        "z": "4115b5639f61ab92",
+        "name": "API_REST_estado de PEPs",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "cc281afd81bc9ec5",
+            "ac97f132340d80b2",
+            "0bb80a78afcbd0fe",
+            "b0fcc193373913a8",
+            "b0f4a0091efebae1",
+            "1b748bfa7067a06c",
+            "238848bc5c8c3d0f",
+            "47aef474ac499427",
+            "6686d438e70c9cc4",
+            "14d6fa99e5b55033",
+            "a1a2e299b149087c"
+        ],
+        "x": 54,
+        "y": 879,
+        "w": 1142,
+        "h": 182
+    },
+    {
+        "id": "eaea90d62647d10d",
+        "type": "group",
+        "z": "4115b5639f61ab92",
+        "name": "API_REST_estado de PSPs",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "7f7d7412170f3abc",
+            "3dc4937ab39c0d84",
+            "51f4a51a8e081b31",
+            "ee282b2aab8b0521",
+            "2c214b3dd8c089cf",
+            "7634acf121a309a6",
+            "143d8bbbb1448115",
+            "b996d134dda472b9",
+            "19cc7fa94e25430e",
+            "80229624ded3b071",
+            "a67ad6af57e5877f"
+        ],
+        "x": 54,
+        "y": 1079,
+        "w": 1142,
+        "h": 182
+    },
+    {
+        "id": "d34eeb94aff283e5",
+        "type": "group",
+        "z": "4115b5639f61ab92",
+        "name": "API_REST_alarmas  de carro transferidor",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "bd0a8118116f2c80",
+            "b590502444de8a7d",
+            "b187f4fb3b1fcbcd",
+            "5ec820e4a960f370",
+            "7961af3efa2d91f9",
+            "6a5dcc4de4740a4a",
+            "54f3884c8dc1d4a7",
+            "00d7351557010092",
+            "80d8e469397a3f21",
+            "52c127881f2de2c0",
+            "f076e84f723f36ba"
+        ],
+        "x": 54,
+        "y": 1279,
+        "w": 1142,
+        "h": 182
+    },
+    {
+        "id": "aa8d65cd5f4e8bf6",
+        "type": "http in",
+        "z": "4115b5639f61ab92",
+        "g": "be87fb75b63b586a",
+        "name": "CT Status API",
+        "url": "/api/ct/status",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 150,
+        "y": 120,
+        "wires": [
+            [
+                "80c00fca50cc5367",
+                "95c6765780010732"
+            ]
+        ]
+    },
+    {
+        "id": "80c00fca50cc5367",
+        "type": "function",
+        "z": "4115b5639f61ab92",
+        "g": "be87fb75b63b586a",
+        "name": "SELECT * FROM ct_status",
+        "func": "// Consulta SQL para obtener el registro con ID 1 de ct_status\nmsg.topic = \"SELECT * FROM ct_status WHERE id = 1\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 120,
+        "wires": [
+            [
+                "0c9ba0b8310b6cb7",
+                "fd328912cf7917dc"
+            ]
+        ]
+    },
+    {
+        "id": "0c9ba0b8310b6cb7",
+        "type": "mysql",
+        "z": "4115b5639f61ab92",
+        "g": "be87fb75b63b586a",
+        "mydb": "519a750abc1e67ac",
+        "name": "",
+        "x": 670,
+        "y": 120,
+        "wires": [
+            [
+                "7f9392d67ba43541"
+            ]
+        ]
+    },
+    {
+        "id": "7f9392d67ba43541",
+        "type": "function",
+        "z": "4115b5639f61ab92",
+        "g": "be87fb75b63b586a",
+        "name": "formatear datos",
+        "func": "// Verificar si hay datos\nif (msg.payload && msg.payload.length > 0) {\n    // Tomar el primer registro (el único con ID 1)\n    const data = msg.payload[0];\n    \n    // Formatear la respuesta\n    msg.payload = {\n        success: true,\n        data: data\n    };\n} else {\n    // Si no hay datos, devolver un error\n    msg.payload = {\n        success: false,\n        error: \"No se encontraron datos del CT\"\n    };\n    msg.statusCode = 404;\n}\n\n// Añadir headers CORS\nmsg.headers = {\n    \"Access-Control-Allow-Origin\": \"*\",\n    \"Access-Control-Allow-Methods\": \"GET, POST, OPTIONS\",\n    \"Access-Control-Allow-Headers\": \"Content-Type\",\n    \"Content-Type\": \"application/json\"\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 880,
+        "y": 120,
+        "wires": [
+            [
+                "6ccc02cea757e355",
+                "455a554b2594aef2"
+            ]
+        ]
+    },
+    {
+        "id": "6ccc02cea757e355",
+        "type": "http response",
+        "z": "4115b5639f61ab92",
+        "g": "be87fb75b63b586a",
+        "name": "",
+        "statusCode": "",
+        "headers": {
+            "content-type": "\"application/json\""
+        },
+        "x": 1030,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "2712b1b50b413c8d",
+        "type": "http in",
+        "z": "4115b5639f61ab92",
+        "g": "be87fb75b63b586a",
+        "name": "CT Status Sync API",
+        "url": "/api/ct/status/sync",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 170,
+        "y": 220,
+        "wires": [
+            [
+                "04ec475b81971b1e"
+            ]
+        ]
+    },
+    {
+        "id": "04ec475b81971b1e",
+        "type": "function",
+        "z": "4115b5639f61ab92",
+        "g": "be87fb75b63b586a",
+        "name": "Sincronización ",
+        "func": "// En este caso, como ya no hay comunicación con el PLC,\n// simplemente devolvemos una respuesta exitosa\nmsg.payload = {\n    success: true,\n    message: \"Sincronización simulada completada\"\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 220,
+        "wires": [
+            [
+                "ec2d5a4bdf615a6c"
+            ]
+        ]
+    },
+    {
+        "id": "ec2d5a4bdf615a6c",
+        "type": "http response",
+        "z": "4115b5639f61ab92",
+        "g": "be87fb75b63b586a",
+        "name": "",
+        "statusCode": "200",
+        "headers": {
+            "content-type": "\"application/json\""
+        },
+        "x": 1040,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "95c6765780010732",
+        "type": "debug",
+        "z": "4115b5639f61ab92",
+        "g": "be87fb75b63b586a",
+        "name": "debug 111",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 350,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "455a554b2594aef2",
+        "type": "debug",
+        "z": "4115b5639f61ab92",
+        "g": "be87fb75b63b586a",
+        "name": "debug 112",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1070,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "fd328912cf7917dc",
+        "type": "debug",
+        "z": "4115b5639f61ab92",
+        "g": "be87fb75b63b586a",
+        "name": "debug 113",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 710,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "6669448dabec1366",
+        "type": "http in",
+        "z": "4115b5639f61ab92",
+        "g": "99f0b6ac6d468d98",
+        "name": "PT Status API",
+        "url": "/api/pt/status",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 150,
+        "y": 320,
+        "wires": [
+            [
+                "cbe8f55c4b3172c3",
+                "b5885575bfa3a961"
+            ]
+        ]
+    },
+    {
+        "id": "cbe8f55c4b3172c3",
+        "type": "function",
+        "z": "4115b5639f61ab92",
+        "g": "99f0b6ac6d468d98",
+        "name": "SELECT * FROM pt_status",
+        "func": "// Consulta SQL para obtener el registro con ID 1 de ct_status\nmsg.topic = \"SELECT * FROM pt_status WHERE id = 1\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 320,
+        "wires": [
+            [
+                "c136dffd882d0226",
+                "4550508b7b38874e"
+            ]
+        ]
+    },
+    {
+        "id": "c136dffd882d0226",
+        "type": "mysql",
+        "z": "4115b5639f61ab92",
+        "g": "99f0b6ac6d468d98",
+        "mydb": "519a750abc1e67ac",
+        "name": "",
+        "x": 670,
+        "y": 320,
+        "wires": [
+            [
+                "48286a21f4a44782"
+            ]
+        ]
+    },
+    {
+        "id": "48286a21f4a44782",
+        "type": "function",
+        "z": "4115b5639f61ab92",
+        "g": "99f0b6ac6d468d98",
+        "name": "formatear datos",
+        "func": "// Verificar si hay datos\nif (msg.payload && msg.payload.length > 0) {\n    // Tomar el primer registro (el único con ID 1)\n    const data = msg.payload[0];\n    \n    // Formatear la respuesta\n    msg.payload = {\n        success: true,\n        data: data\n    };\n} else {\n    // Si no hay datos, devolver un error\n    msg.payload = {\n        success: false,\n        error: \"No se encontraron datos del CT\"\n    };\n    msg.statusCode = 404;\n}\n\n// Añadir headers CORS\nmsg.headers = {\n    \"Access-Control-Allow-Origin\": \"*\",\n    \"Access-Control-Allow-Methods\": \"GET, POST, OPTIONS\",\n    \"Access-Control-Allow-Headers\": \"Content-Type\",\n    \"Content-Type\": \"application/json\"\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 880,
+        "y": 320,
+        "wires": [
+            [
+                "7475461341721953",
+                "f398e4b2972df342"
+            ]
+        ]
+    },
+    {
+        "id": "7475461341721953",
+        "type": "http response",
+        "z": "4115b5639f61ab92",
+        "g": "99f0b6ac6d468d98",
+        "name": "",
+        "statusCode": "",
+        "headers": {
+            "content-type": "\"application/json\""
+        },
+        "x": 1030,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "96dad7ae31c2fe69",
+        "type": "http in",
+        "z": "4115b5639f61ab92",
+        "g": "99f0b6ac6d468d98",
+        "name": "PT Status Sync API",
+        "url": "/api/pt/status/sync",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 170,
+        "y": 420,
+        "wires": [
+            [
+                "51dea51ad4f40e30"
+            ]
+        ]
+    },
+    {
+        "id": "51dea51ad4f40e30",
+        "type": "function",
+        "z": "4115b5639f61ab92",
+        "g": "99f0b6ac6d468d98",
+        "name": "Sincronización ",
+        "func": "// En este caso, como ya no hay comunicación con el PLC,\n// simplemente devolvemos una respuesta exitosa\nmsg.payload = {\n    success: true,\n    message: \"Sincronización simulada completada\"\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 420,
+        "wires": [
+            [
+                "0a3c176bd7dae5da"
+            ]
+        ]
+    },
+    {
+        "id": "0a3c176bd7dae5da",
+        "type": "http response",
+        "z": "4115b5639f61ab92",
+        "g": "99f0b6ac6d468d98",
+        "name": "",
+        "statusCode": "200",
+        "headers": {
+            "content-type": "\"application/json\""
+        },
+        "x": 1040,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "b5885575bfa3a961",
+        "type": "debug",
+        "z": "4115b5639f61ab92",
+        "g": "99f0b6ac6d468d98",
+        "name": "debug 1",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 350,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "f398e4b2972df342",
+        "type": "debug",
+        "z": "4115b5639f61ab92",
+        "g": "99f0b6ac6d468d98",
+        "name": "debug 2",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1090,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "4550508b7b38874e",
+        "type": "debug",
+        "z": "4115b5639f61ab92",
+        "g": "99f0b6ac6d468d98",
+        "name": "debug 3",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 710,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "f7526627cc478076",
+        "type": "http in",
+        "z": "4115b5639f61ab92",
+        "g": "b956f497983cc83d",
+        "name": "TLV1 Status API",
+        "url": "/api/tlv1/status",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 160,
+        "y": 520,
+        "wires": [
+            [
+                "dbc9ed1919d26a1d",
+                "d041b3ea9bba3a37"
+            ]
+        ]
+    },
+    {
+        "id": "dbc9ed1919d26a1d",
+        "type": "function",
+        "z": "4115b5639f61ab92",
+        "g": "b956f497983cc83d",
+        "name": "SELECT * FROM tlv1_status",
+        "func": "// Consulta SQL para obtener el registro con ID 1 de ct_status\nmsg.topic = \"select * from tlv1_status WHERE id = 1\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 520,
+        "wires": [
+            [
+                "63cd81b6a4c38d19",
+                "8834e62eabe6468d"
+            ]
+        ]
+    },
+    {
+        "id": "63cd81b6a4c38d19",
+        "type": "mysql",
+        "z": "4115b5639f61ab92",
+        "g": "b956f497983cc83d",
+        "mydb": "519a750abc1e67ac",
+        "name": "",
+        "x": 670,
+        "y": 520,
+        "wires": [
+            [
+                "271676d0800ddb9c"
+            ]
+        ]
+    },
+    {
+        "id": "271676d0800ddb9c",
+        "type": "function",
+        "z": "4115b5639f61ab92",
+        "g": "b956f497983cc83d",
+        "name": "formatear datos",
+        "func": "// Verificar si hay datos\nif (msg.payload && msg.payload.length > 0) {\n    // Tomar el primer registro (el único con ID 1)\n    const data = msg.payload[0];\n    \n    // Formatear la respuesta\n    msg.payload = {\n        success: true,\n        data: data\n    };\n} else {\n    // Si no hay datos, devolver un error\n    msg.payload = {\n        success: false,\n        error: \"No se encontraron datos del tlv1\"\n    };\n    msg.statusCode = 404;\n}\n\n// Añadir headers CORS\nmsg.headers = {\n    \"Access-Control-Allow-Origin\": \"*\",\n    \"Access-Control-Allow-Methods\": \"GET, POST, OPTIONS\",\n    \"Access-Control-Allow-Headers\": \"Content-Type\",\n    \"Content-Type\": \"application/json\"\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 880,
+        "y": 520,
+        "wires": [
+            [
+                "ef42d605f8377d9e",
+                "70b88c2fda9f1ccb"
+            ]
+        ]
+    },
+    {
+        "id": "ef42d605f8377d9e",
+        "type": "http response",
+        "z": "4115b5639f61ab92",
+        "g": "b956f497983cc83d",
+        "name": "",
+        "statusCode": "",
+        "headers": {
+            "content-type": "\"application/json\""
+        },
+        "x": 1030,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "482952884efa6e8d",
+        "type": "http in",
+        "z": "4115b5639f61ab92",
+        "g": "b956f497983cc83d",
+        "name": "TLV1 Status Sync API",
+        "url": "/api/tlv1/status/sync",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 180,
+        "y": 620,
+        "wires": [
+            [
+                "64fdd533eb2568bd"
+            ]
+        ]
+    },
+    {
+        "id": "64fdd533eb2568bd",
+        "type": "function",
+        "z": "4115b5639f61ab92",
+        "g": "b956f497983cc83d",
+        "name": "Sincronización ",
+        "func": "// En este caso, como ya no hay comunicación con el PLC,\n// simplemente devolvemos una respuesta exitosa\nmsg.payload = {\n    success: true,\n    message: \"Sincronización simulada completada\"\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 620,
+        "wires": [
+            [
+                "391b9a4d2fb201d0"
+            ]
+        ]
+    },
+    {
+        "id": "391b9a4d2fb201d0",
+        "type": "http response",
+        "z": "4115b5639f61ab92",
+        "g": "b956f497983cc83d",
+        "name": "",
+        "statusCode": "200",
+        "headers": {
+            "content-type": "\"application/json\""
+        },
+        "x": 1040,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "d041b3ea9bba3a37",
+        "type": "debug",
+        "z": "4115b5639f61ab92",
+        "g": "b956f497983cc83d",
+        "name": "debug 26",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 350,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "70b88c2fda9f1ccb",
+        "type": "debug",
+        "z": "4115b5639f61ab92",
+        "g": "b956f497983cc83d",
+        "name": "debug 27",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1090,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "8834e62eabe6468d",
+        "type": "debug",
+        "z": "4115b5639f61ab92",
+        "g": "b956f497983cc83d",
+        "name": "debug 28",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 710,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "f2cd6dfcb7a3328b",
+        "type": "http in",
+        "z": "4115b5639f61ab92",
+        "g": "613566b4015e61d2",
+        "name": "TLV2 Status API",
+        "url": "/api/tlv2/status",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 160,
+        "y": 720,
+        "wires": [
+            [
+                "49b11ea7fe797ce5",
+                "390ce33ceb536303"
+            ]
+        ]
+    },
+    {
+        "id": "49b11ea7fe797ce5",
+        "type": "function",
+        "z": "4115b5639f61ab92",
+        "g": "613566b4015e61d2",
+        "name": "SELECT * FROM tlv2_status",
+        "func": "// Consulta SQL para obtener el registro con ID 1 de ct_status\nmsg.topic = \"select * from tlv2_status WHERE id = 1\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 720,
+        "wires": [
+            [
+                "1724fb0c65f1f11b",
+                "a5088bb19968dd40"
+            ]
+        ]
+    },
+    {
+        "id": "1724fb0c65f1f11b",
+        "type": "mysql",
+        "z": "4115b5639f61ab92",
+        "g": "613566b4015e61d2",
+        "mydb": "519a750abc1e67ac",
+        "name": "",
+        "x": 670,
+        "y": 720,
+        "wires": [
+            [
+                "4adf2f5cb7e792bd"
+            ]
+        ]
+    },
+    {
+        "id": "4adf2f5cb7e792bd",
+        "type": "function",
+        "z": "4115b5639f61ab92",
+        "g": "613566b4015e61d2",
+        "name": "formatear datos",
+        "func": "// Verificar si hay datos\nif (msg.payload && msg.payload.length > 0) {\n    // Tomar el primer registro (el único con ID 1)\n    const data = msg.payload[0];\n    \n    // Formatear la respuesta\n    msg.payload = {\n        success: true,\n        data: data\n    };\n} else {\n    // Si no hay datos, devolver un error\n    msg.payload = {\n        success: false,\n        error: \"No se encontraron datos del tlv1\"\n    };\n    msg.statusCode = 404;\n}\n\n// Añadir headers CORS\nmsg.headers = {\n    \"Access-Control-Allow-Origin\": \"*\",\n    \"Access-Control-Allow-Methods\": \"GET, POST, OPTIONS\",\n    \"Access-Control-Allow-Headers\": \"Content-Type\",\n    \"Content-Type\": \"application/json\"\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 880,
+        "y": 720,
+        "wires": [
+            [
+                "846a41ee05038af5",
+                "50df4bdc91373a44"
+            ]
+        ]
+    },
+    {
+        "id": "846a41ee05038af5",
+        "type": "http response",
+        "z": "4115b5639f61ab92",
+        "g": "613566b4015e61d2",
+        "name": "",
+        "statusCode": "",
+        "headers": {
+            "content-type": "\"application/json\""
+        },
+        "x": 1030,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "50d3bc8d3cf5f720",
+        "type": "http in",
+        "z": "4115b5639f61ab92",
+        "g": "613566b4015e61d2",
+        "name": "TLV2 Status Sync API",
+        "url": "/api/tlv2/status/sync",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 180,
+        "y": 820,
+        "wires": [
+            [
+                "d37514cc384f948a"
+            ]
+        ]
+    },
+    {
+        "id": "d37514cc384f948a",
+        "type": "function",
+        "z": "4115b5639f61ab92",
+        "g": "613566b4015e61d2",
+        "name": "Sincronización ",
+        "func": "// En este caso, como ya no hay comunicación con el PLC,\n// simplemente devolvemos una respuesta exitosa\nmsg.payload = {\n    success: true,\n    message: \"Sincronización simulada completada\"\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 820,
+        "wires": [
+            [
+                "85d4f7f07b6231f5"
+            ]
+        ]
+    },
+    {
+        "id": "85d4f7f07b6231f5",
+        "type": "http response",
+        "z": "4115b5639f61ab92",
+        "g": "613566b4015e61d2",
+        "name": "",
+        "statusCode": "200",
+        "headers": {
+            "content-type": "\"application/json\""
+        },
+        "x": 1040,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "390ce33ceb536303",
+        "type": "debug",
+        "z": "4115b5639f61ab92",
+        "g": "613566b4015e61d2",
+        "name": "debug 29",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 350,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "50df4bdc91373a44",
+        "type": "debug",
+        "z": "4115b5639f61ab92",
+        "g": "613566b4015e61d2",
+        "name": "debug 30",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1090,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "a5088bb19968dd40",
+        "type": "debug",
+        "z": "4115b5639f61ab92",
+        "g": "613566b4015e61d2",
+        "name": "debug 31",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 710,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "cc281afd81bc9ec5",
+        "type": "http in",
+        "z": "4115b5639f61ab92",
+        "g": "f57f9633bbaf243d",
+        "name": "PEPs Status API",
+        "url": "/api/peps/status",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 160,
+        "y": 920,
+        "wires": [
+            [
+                "ac97f132340d80b2",
+                "6686d438e70c9cc4"
+            ]
+        ]
+    },
+    {
+        "id": "ac97f132340d80b2",
+        "type": "function",
+        "z": "4115b5639f61ab92",
+        "g": "f57f9633bbaf243d",
+        "name": "SELECT * FROM mesasentrada_status",
+        "func": "// Consulta SQL para obtener el registro con ID 1 de ct_status\nmsg.topic = \"select * from mesasentrada_status WHERE id = 1\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 920,
+        "wires": [
+            [
+                "0bb80a78afcbd0fe",
+                "a1a2e299b149087c"
+            ]
+        ]
+    },
+    {
+        "id": "0bb80a78afcbd0fe",
+        "type": "mysql",
+        "z": "4115b5639f61ab92",
+        "g": "f57f9633bbaf243d",
+        "mydb": "519a750abc1e67ac",
+        "name": "",
+        "x": 710,
+        "y": 920,
+        "wires": [
+            [
+                "b0fcc193373913a8"
+            ]
+        ]
+    },
+    {
+        "id": "b0fcc193373913a8",
+        "type": "function",
+        "z": "4115b5639f61ab92",
+        "g": "f57f9633bbaf243d",
+        "name": "formatear datos",
+        "func": "// Verificar si hay datos\nif (msg.payload && msg.payload.length > 0) {\n    // Tomar el primer registro (el único con ID 1)\n    const data = msg.payload[0];\n    \n    // Formatear la respuesta\n    msg.payload = {\n        success: true,\n        data: data\n    };\n} else {\n    // Si no hay datos, devolver un error\n    msg.payload = {\n        success: false,\n        error: \"No se encontraron datos del tlv1\"\n    };\n    msg.statusCode = 404;\n}\n\n// Añadir headers CORS\nmsg.headers = {\n    \"Access-Control-Allow-Origin\": \"*\",\n    \"Access-Control-Allow-Methods\": \"GET, POST, OPTIONS\",\n    \"Access-Control-Allow-Headers\": \"Content-Type\",\n    \"Content-Type\": \"application/json\"\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 880,
+        "y": 920,
+        "wires": [
+            [
+                "b0f4a0091efebae1",
+                "14d6fa99e5b55033"
+            ]
+        ]
+    },
+    {
+        "id": "b0f4a0091efebae1",
+        "type": "http response",
+        "z": "4115b5639f61ab92",
+        "g": "f57f9633bbaf243d",
+        "name": "",
+        "statusCode": "",
+        "headers": {
+            "content-type": "\"application/json\""
+        },
+        "x": 1030,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "1b748bfa7067a06c",
+        "type": "http in",
+        "z": "4115b5639f61ab92",
+        "g": "f57f9633bbaf243d",
+        "name": "PEPs Status Sync API",
+        "url": "/api/peps/status/sync",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 180,
+        "y": 1020,
+        "wires": [
+            [
+                "238848bc5c8c3d0f"
+            ]
+        ]
+    },
+    {
+        "id": "238848bc5c8c3d0f",
+        "type": "function",
+        "z": "4115b5639f61ab92",
+        "g": "f57f9633bbaf243d",
+        "name": "Sincronización ",
+        "func": "// En este caso, como ya no hay comunicación con el PLC,\n// simplemente devolvemos una respuesta exitosa\nmsg.payload = {\n    success: true,\n    message: \"Sincronización simulada completada\"\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 1020,
+        "wires": [
+            [
+                "47aef474ac499427"
+            ]
+        ]
+    },
+    {
+        "id": "47aef474ac499427",
+        "type": "http response",
+        "z": "4115b5639f61ab92",
+        "g": "f57f9633bbaf243d",
+        "name": "",
+        "statusCode": "200",
+        "headers": {
+            "content-type": "\"application/json\""
+        },
+        "x": 1040,
+        "y": 1020,
+        "wires": []
+    },
+    {
+        "id": "6686d438e70c9cc4",
+        "type": "debug",
+        "z": "4115b5639f61ab92",
+        "g": "f57f9633bbaf243d",
+        "name": "debug 32",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 350,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "14d6fa99e5b55033",
+        "type": "debug",
+        "z": "4115b5639f61ab92",
+        "g": "f57f9633bbaf243d",
+        "name": "debug 33",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1090,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "a1a2e299b149087c",
+        "type": "debug",
+        "z": "4115b5639f61ab92",
+        "g": "f57f9633bbaf243d",
+        "name": "debug 34",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 710,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "7f7d7412170f3abc",
+        "type": "http in",
+        "z": "4115b5639f61ab92",
+        "g": "eaea90d62647d10d",
+        "name": "PSPs Status API",
+        "url": "/api/psps/status",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 160,
+        "y": 1120,
+        "wires": [
+            [
+                "3dc4937ab39c0d84",
+                "19cc7fa94e25430e"
+            ]
+        ]
+    },
+    {
+        "id": "3dc4937ab39c0d84",
+        "type": "function",
+        "z": "4115b5639f61ab92",
+        "g": "eaea90d62647d10d",
+        "name": "SELECT * FROM mesassalida_status",
+        "func": "// Consulta SQL para obtener el registro con ID 1 de ct_status\nmsg.topic = \"select * from mesassalida_status WHERE id = 1\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 1120,
+        "wires": [
+            [
+                "51f4a51a8e081b31",
+                "a67ad6af57e5877f"
+            ]
+        ]
+    },
+    {
+        "id": "51f4a51a8e081b31",
+        "type": "mysql",
+        "z": "4115b5639f61ab92",
+        "g": "eaea90d62647d10d",
+        "mydb": "519a750abc1e67ac",
+        "name": "",
+        "x": 710,
+        "y": 1120,
+        "wires": [
+            [
+                "ee282b2aab8b0521"
+            ]
+        ]
+    },
+    {
+        "id": "ee282b2aab8b0521",
+        "type": "function",
+        "z": "4115b5639f61ab92",
+        "g": "eaea90d62647d10d",
+        "name": "formatear datos",
+        "func": "// Verificar si hay datos\nif (msg.payload && msg.payload.length > 0) {\n    // Tomar el primer registro (el único con ID 1)\n    const data = msg.payload[0];\n    \n    // Formatear la respuesta\n    msg.payload = {\n        success: true,\n        data: data\n    };\n} else {\n    // Si no hay datos, devolver un error\n    msg.payload = {\n        success: false,\n        error: \"No se encontraron datos del tlv1\"\n    };\n    msg.statusCode = 404;\n}\n\n// Añadir headers CORS\nmsg.headers = {\n    \"Access-Control-Allow-Origin\": \"*\",\n    \"Access-Control-Allow-Methods\": \"GET, POST, OPTIONS\",\n    \"Access-Control-Allow-Headers\": \"Content-Type\",\n    \"Content-Type\": \"application/json\"\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 880,
+        "y": 1120,
+        "wires": [
+            [
+                "2c214b3dd8c089cf",
+                "80229624ded3b071"
+            ]
+        ]
+    },
+    {
+        "id": "2c214b3dd8c089cf",
+        "type": "http response",
+        "z": "4115b5639f61ab92",
+        "g": "eaea90d62647d10d",
+        "name": "",
+        "statusCode": "",
+        "headers": {
+            "content-type": "\"application/json\""
+        },
+        "x": 1030,
+        "y": 1120,
+        "wires": []
+    },
+    {
+        "id": "7634acf121a309a6",
+        "type": "http in",
+        "z": "4115b5639f61ab92",
+        "g": "eaea90d62647d10d",
+        "name": "PSPs Status Sync API",
+        "url": "/api/psps/status/sync",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 180,
+        "y": 1220,
+        "wires": [
+            [
+                "143d8bbbb1448115"
+            ]
+        ]
+    },
+    {
+        "id": "143d8bbbb1448115",
+        "type": "function",
+        "z": "4115b5639f61ab92",
+        "g": "eaea90d62647d10d",
+        "name": "Sincronización ",
+        "func": "// En este caso, como ya no hay comunicación con el PLC,\n// simplemente devolvemos una respuesta exitosa\nmsg.payload = {\n    success: true,\n    message: \"Sincronización simulada completada\"\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 1220,
+        "wires": [
+            [
+                "b996d134dda472b9"
+            ]
+        ]
+    },
+    {
+        "id": "b996d134dda472b9",
+        "type": "http response",
+        "z": "4115b5639f61ab92",
+        "g": "eaea90d62647d10d",
+        "name": "",
+        "statusCode": "200",
+        "headers": {
+            "content-type": "\"application/json\""
+        },
+        "x": 1040,
+        "y": 1220,
+        "wires": []
+    },
+    {
+        "id": "19cc7fa94e25430e",
+        "type": "debug",
+        "z": "4115b5639f61ab92",
+        "g": "eaea90d62647d10d",
+        "name": "debug 73",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 350,
+        "y": 1160,
+        "wires": []
+    },
+    {
+        "id": "80229624ded3b071",
+        "type": "debug",
+        "z": "4115b5639f61ab92",
+        "g": "eaea90d62647d10d",
+        "name": "debug 74",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1090,
+        "y": 1160,
+        "wires": []
+    },
+    {
+        "id": "a67ad6af57e5877f",
+        "type": "debug",
+        "z": "4115b5639f61ab92",
+        "g": "eaea90d62647d10d",
+        "name": "debug 75",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 710,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "bd0a8118116f2c80",
+        "type": "http in",
+        "z": "4115b5639f61ab92",
+        "g": "d34eeb94aff283e5",
+        "name": "CT Alarmas API",
+        "url": "/api/ct/alarmas",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 160,
+        "y": 1320,
+        "wires": [
+            [
+                "b590502444de8a7d",
+                "80d8e469397a3f21"
+            ]
+        ]
+    },
+    {
+        "id": "b590502444de8a7d",
+        "type": "function",
+        "z": "4115b5639f61ab92",
+        "g": "d34eeb94aff283e5",
+        "name": "SELECT * FROM ct_alarmas",
+        "func": "// Consulta SQL para obtener el registro con ID 1 de ct_status\nmsg.topic = \"select * from ct_alarmas WHERE id = 1\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 1320,
+        "wires": [
+            [
+                "b187f4fb3b1fcbcd",
+                "f076e84f723f36ba"
+            ]
+        ]
+    },
+    {
+        "id": "b187f4fb3b1fcbcd",
+        "type": "mysql",
+        "z": "4115b5639f61ab92",
+        "g": "d34eeb94aff283e5",
+        "mydb": "519a750abc1e67ac",
+        "name": "",
+        "x": 710,
+        "y": 1320,
+        "wires": [
+            [
+                "5ec820e4a960f370"
+            ]
+        ]
+    },
+    {
+        "id": "5ec820e4a960f370",
+        "type": "function",
+        "z": "4115b5639f61ab92",
+        "g": "d34eeb94aff283e5",
+        "name": "formatear datos",
+        "func": "// Verificar si hay datos\nif (msg.payload && msg.payload.length > 0) {\n    // Tomar el primer registro (el único con ID 1)\n    const data = msg.payload[0];\n    \n    // Formatear la respuesta\n    msg.payload = {\n        success: true,\n        data: data\n    };\n} else {\n    // Si no hay datos, devolver un error\n    msg.payload = {\n        success: false,\n        error: \"No se encontraron datos del tlv1\"\n    };\n    msg.statusCode = 404;\n}\n\n// Añadir headers CORS\nmsg.headers = {\n    \"Access-Control-Allow-Origin\": \"*\",\n    \"Access-Control-Allow-Methods\": \"GET, POST, OPTIONS\",\n    \"Access-Control-Allow-Headers\": \"Content-Type\",\n    \"Content-Type\": \"application/json\"\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 880,
+        "y": 1320,
+        "wires": [
+            [
+                "7961af3efa2d91f9",
+                "52c127881f2de2c0"
+            ]
+        ]
+    },
+    {
+        "id": "7961af3efa2d91f9",
+        "type": "http response",
+        "z": "4115b5639f61ab92",
+        "g": "d34eeb94aff283e5",
+        "name": "",
+        "statusCode": "",
+        "headers": {
+            "content-type": "\"application/json\""
+        },
+        "x": 1030,
+        "y": 1320,
+        "wires": []
+    },
+    {
+        "id": "6a5dcc4de4740a4a",
+        "type": "http in",
+        "z": "4115b5639f61ab92",
+        "g": "d34eeb94aff283e5",
+        "name": "CT Alarmas Sync API",
+        "url": "/api/ct/alarmas/sync",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 180,
+        "y": 1420,
+        "wires": [
+            [
+                "54f3884c8dc1d4a7"
+            ]
+        ]
+    },
+    {
+        "id": "54f3884c8dc1d4a7",
+        "type": "function",
+        "z": "4115b5639f61ab92",
+        "g": "d34eeb94aff283e5",
+        "name": "Sincronización ",
+        "func": "// En este caso, como ya no hay comunicación con el PLC,\n// simplemente devolvemos una respuesta exitosa\nmsg.payload = {\n    success: true,\n    message: \"Sincronización simulada completada\"\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 1420,
+        "wires": [
+            [
+                "00d7351557010092"
+            ]
+        ]
+    },
+    {
+        "id": "00d7351557010092",
+        "type": "http response",
+        "z": "4115b5639f61ab92",
+        "g": "d34eeb94aff283e5",
+        "name": "",
+        "statusCode": "200",
+        "headers": {
+            "content-type": "\"application/json\""
+        },
+        "x": 1040,
+        "y": 1420,
+        "wires": []
+    },
+    {
+        "id": "80d8e469397a3f21",
+        "type": "debug",
+        "z": "4115b5639f61ab92",
+        "g": "d34eeb94aff283e5",
+        "name": "debug 83",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 350,
+        "y": 1360,
+        "wires": []
+    },
+    {
+        "id": "52c127881f2de2c0",
+        "type": "debug",
+        "z": "4115b5639f61ab92",
+        "g": "d34eeb94aff283e5",
+        "name": "debug 84",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1090,
+        "y": 1360,
+        "wires": []
+    },
+    {
+        "id": "f076e84f723f36ba",
+        "type": "debug",
+        "z": "4115b5639f61ab92",
+        "g": "d34eeb94aff283e5",
+        "name": "debug 85",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 710,
+        "y": 1380,
+        "wires": []
+    },
+    {
+        "id": "519a750abc1e67ac",
+        "type": "MySQLdatabase",
+        "name": "",
+        "host": "127.0.0.1",
+        "port": "3306",
+        "db": "almacenSilo",
+        "tz": "",
+        "charset": "UTF8"
+    }
+]
